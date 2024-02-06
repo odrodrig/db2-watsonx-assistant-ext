@@ -1,0 +1,130 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "db2-integration",
+    "description": "defaultDescription",
+    "version": "0.1"
+  },
+  "servers": [
+    {
+      "url": "https://db2-integration.1cv0qarcxxhz.us-east.codeengine.appdomain.cloud"
+    }
+  ],
+  "paths": {
+    "/user/byName": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "John%20Doe"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/inline_response_200"
+                }
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://db2-integration.1cv0qarcxxhz.us-east.codeengine.appdomain.cloud"
+          }
+        ]
+      }
+    },
+    "/user/byEmail": {
+      "get": {
+        "description": "Auto generated using Swagger Inspector",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": false,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "xxxx@email.com"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Auto generated using Swagger Inspector",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/inline_response_200"
+                }
+              }
+            }
+          }
+        },
+        "servers": [
+          {
+            "url": "https://db2-integration.1cv0qarcxxhz.us-east.codeengine.appdomain.cloud"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "inline_response_200": {
+        "type": "object",
+        "properties": {
+          "UID": {
+            "type": "string"
+          },
+          "F_NAME": {
+            "type": "string"
+          },
+          "L_NAME": {
+            "type": "string"
+          },
+          "TITLE": {
+            "type": "string"
+          },
+          "COMPANY": {
+            "type": "string"
+          },
+          "PROFILE": {
+            "type": "string"
+          },
+          "EMAIL": {
+            "type": "string"
+          },
+          "DOMAIN": {
+            "type": "string"
+          },
+          "DEPT": {
+            "type": "string"
+          },
+          "SALES_REP": {
+            "type": "string"
+          },
+          "LOCATION": {
+            "type": "string"
+          },
+          "SIX_SENSE_ID": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
